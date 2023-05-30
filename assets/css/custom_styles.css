@@ -307,7 +307,7 @@ body, html {
     min-height: 100%;
     height: auto;
   }
-  #about-custom-build{
+  #about-custom-build, #about-user-experience{
 /*    background: linear-gradient(to top right, #F8F8F8, #E8EBFA99);*/
     background-image: url("../images/custom-build-solutions_bg_1.png");
     min-height: 100%;
@@ -396,3 +396,17 @@ body, html {
     color: #000313;
   }
 /*About - Custom build Ends*/
+
+/*About Better Decision*/
+  
+  .ellipse_2 {
+    left: 27%;
+    bottom: 0%;
+    height: 50%;
+  }
+  .ellipse_15 {
+    left: 2%;
+    top: 10%;
+    height: 50%;
+  }
+/*About Better Decision Ends*/
