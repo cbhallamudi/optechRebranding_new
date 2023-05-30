@@ -1,0 +1,22 @@
+@media screen and (width < 992px){
+	.pl-50px{
+		padding-left: 0;
+	}
+}
+@media screen and (width < 575px){
+	.banner-heading, .banner-para{
+		width: 100%;
+		height: fit-content;
+	}
+
+	.navbar-brand img{
+		height: auto;
+		width: 250px;
+	}
+
+	.owl-carousel .item .content-container{
+	  width: 90%;
+	  margin: auto;
+	}  
+}
+
