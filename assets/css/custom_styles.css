@@ -532,7 +532,7 @@ body, html {
   max-width: 100% !important;
 }
 .swiper-slide.swiper-slide-active {
-  transform: scaleY(1.2) translateY(-20%);
+  transform: scaleY(1.2) translateY(-10%);
 /*  background: #aaaa;*/
 }
 
@@ -574,6 +574,13 @@ body, html {
 
 .swiper-container.position-relative.mt-200px.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
   overflow: hidden !important;
+  min-height: 500px !important;
+}
+
+.swiper-wrapper {
+  min-height: 500px !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 /*Portfolio Ends*/

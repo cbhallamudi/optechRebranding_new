@@ -31,11 +31,11 @@ $(document).ready(function(){
     },
     breakpoints: {
 
-        767: {
+        992: {
             slidesPerView:3,
             spaceBetween: 30,
         },
-        574: {
+        320: {
             slidesPerView:1,
             spaceBetween: 10,
         }

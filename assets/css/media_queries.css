@@ -6,6 +6,10 @@
 	img[class*="ellipse_"]{
 		z-index: -1;
 	}
+
+	.swiper-slide.swiper-slide-active {
+	 width: 100% !important;
+	}
 }
 @media screen and (width < 575px){
 	.banner-heading, .banner-para{
