@@ -544,7 +544,6 @@ body, html {
   bottom: -40%;
   left: -3%;
   border-radius: 100%;
-  backdrop-filter: blur(4px);
 }
 .in-house-abs-img{
   position: absolute;
@@ -584,3 +583,15 @@ body, html {
 }
 
 /*Portfolio Ends*/
+
+/* Contact Section */
+  .contact-top-section{
+    height: auto;
+    min-height: 350px;
+  }
+  .contact-bottom-section{
+    min-height: 490px;
+    height: auto;
+    background-color: #AFC2F2;
+  }
+/* Contact Section Ends */

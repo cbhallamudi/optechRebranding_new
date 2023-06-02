@@ -19,7 +19,7 @@ $(document).ready(function(){
     spaceBetween: 50,
     loopAdditionalSlides: 30,
     autoplay: {
-        delay: 100000000000000,
+        delay: 10000,
     },
     pagination: {                       //pagination(dots)
        el: '.swiper-pagination',
