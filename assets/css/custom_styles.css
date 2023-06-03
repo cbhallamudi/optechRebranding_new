@@ -109,6 +109,13 @@ body, html {
     }
   }
 
+  .w-lg-55{
+    width: 55%;
+  }
+  .w-lg-45{
+    width: 45%;
+  }
+  
 /*Common Classes Ends*/
 
 
@@ -430,6 +437,15 @@ body, html {
     color: var(--dark-text-color);
   }
 
+  h3.title-inverse{
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+
   .disc{
     font-family: 'Inter';
     font-style: normal;
@@ -585,13 +601,87 @@ body, html {
 /*Portfolio Ends*/
 
 /* Contact Section */
-  .contact-top-section{
+
+  #contact{
+    min-height: 100%;
     height: auto;
-    min-height: 350px;
+  }
+  .contact-top-section{
+    height: 300px;
   }
   .contact-bottom-section{
-    min-height: 490px;
-    height: auto;
+    height: 350px;
     background-color: #AFC2F2;
+  }
+
+  .contact-form-div{
+    top: 20%;
+    left: 17.5%;
+    width: 65%;
+    min-height: 400px;
+    height: auto;
+    display: flex;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .contact-form{
+    background-color: #F8F8F8;
+    width: 100%;
+  }
+
+  .contact-form input {
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  .contact-form textarea{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+
+  .contact-form input::placeholder,.contact-form textarea::placeholder{
+    color: rgba(0, 3, 19, 0.5);
+    font-size: 16px;
+  }
+
+  .contact-form input:focus {
+    color: var(--dark-text-color);
+    background-color: var(--bs-body-bg);
+    border: none !important; 
+    outline: none !important;
+    box-shadow: 0 0 2px 2px #0002;
+  }
+
+  .contact-form input::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--custom-primary);
+  }
+
+  .form-control:focus::after{
+     width: 100%;
+  }
+
+  address ~ a{
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  address ~ a:hover, address ~ a:focus,
+  address ~ a:active{
+    color: var(--dark-text-color);
   }
 /* Contact Section Ends */
