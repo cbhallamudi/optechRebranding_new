@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	AOS.init();	
-      var portfolioSlidesCount = $(".swiper-slide").length;
+    var portfolioSlidesCount = $(".swiper-slide").length;
     var midSlide = Math.round(portfolioSlidesCount/2);
   // Assign some jquery elements we'll need
   var $swiper = $(".swiper-container");
@@ -33,6 +33,10 @@ $(document).ready(function(){
 
         992: {
             slidesPerView:3,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView:1,
             spaceBetween: 30,
         },
         320: {
@@ -85,7 +89,7 @@ function setParams(w) {
         slidesPerPage = 1;
     } else {
         if (w < 901) {
-            slidesPerPage = 2;
+            slidesPerPage = 1;
         } else {
             if (w < 1101) {
                 slidesPerPage = 3;

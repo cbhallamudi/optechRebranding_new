@@ -1,3 +1,22 @@
+@media only screen and (min-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(2.5% - 16px);
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: 10%;
+  }
+
+}
+
+
+
+
 @media screen and (width < 992px){
 	.pl-50px{
 		padding-left: 0;
@@ -17,15 +36,39 @@
 	  width: 100%;
 	}
 }
-@media screen and (width < 575px){
+
+@media only screen and (max-width: 900px) {
+
+  #slider-container #slider .slide {
+    width: 10%;
+  }
+
+}
+
+
+@media screen and (width < 768px){
+	div{
+		width: 100%;
+		text-align: center;
+	}
+
 	.banner-heading, .banner-para{
 		width: 100%;
 		height: fit-content;
+		text-align: center;
 	}
+	.banner-heading{
+		font-size: max(12px,6vmax);
+		line-height: unset;
+	}	
+}
+
+@media screen and (width < 576px){
+	
 
 	.navbar-brand img{
 		height: auto;
-		width: 250px;
+		width: 220px;
 	}
 
 	.owl-carousel .item .content-container{
@@ -33,4 +76,15 @@
 	  margin: auto;
 	}  
 }
+
+@media only screen and (max-width: 550px) {
+
+  #slider-container #slider .slide {
+    width: 10%;
+  }
+
+}
+
+
+
 
