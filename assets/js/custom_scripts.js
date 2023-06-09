@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	AOS.init();	
-    
+    $('#spanYear').html(new Date().getFullYear());
 });
 var slider1 = new Swiper ('.slider1', {
     effect: 'slide',
@@ -54,7 +54,7 @@ var slider2 = new Swiper ('.slider2', {
         slidesPerView: 1
       },
       767: {
-        slidesPerView: 2
+        slidesPerView: 3
       },
       1270: {
         slidesPerView: 3

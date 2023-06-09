@@ -74,14 +74,55 @@
         <img src="./assets/images/Ellipse_13.png" alt="" class="position-absolute ellipse_13 d-none d-md-block">
         <div class="swiper-container slider1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><h1>Slide 1</h1></div>
-                <div class="swiper-slide"><h1>Slide 2</h1></div>
-                <div class="swiper-slide"><h1>Slide 3</h1></div>
-                <div class="swiper-slide"><h1>Slide 4</h1></div>
+                <div class="swiper-slide">
+                  <div class="service-slider-content-container">
+                    <div>
+                      <img class="img-fluid service-img" src="./assets/images/Services_Mobile_development_img.png" alt="">
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                      <h3 class="service-title">mobile development</h3>
+                      <p class="service-description">Mobile-first development is critical to the success of your new product. Everyone is walking around with a mini-computer in their pocket and in most cases, this is how they will interact with your product, brand, and company.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="service-slider-content-container">
+                    <div>
+                      <img class="img-fluid service-img" src="./assets/images/Services_min_viable_pdt.png" alt="">
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                      <h3 class="service-title">minimum viable product</h3>
+                      <p class="service-description">We've seen too many companies over-spend and over-develop a product that they are convinced their users will want. We strongly encourage our clients to get an MVP up and out to your market as soon as possible! It is critical to launch your product, test user behavior, and improve or alter your product based on user demands.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="service-slider-content-container">
+                    <div>
+                      <img class="img-fluid service-img" src="./assets/images/Services_devops_img.png" alt="">
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                      <h3 class="service-title">devops</h3>
+                      <p class="service-description">We minimize build time and enable seamless collaboration between development teams through the use of CI best practicies.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="service-slider-content-container">
+                    <div>
+                      <img class="img-fluid service-img" src="./assets/images/Services_digital_marketing_img.png" alt="">
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                      <h3 class="service-title">Digital marketing</h3>
+                      <p class="service-description">We begin every project with our business goals in mind. Product development should harmonize with your brand identity and come to life through outward messaging.</p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
             <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left fa-2x"></i></div>
-            <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right fa-2x"></i></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left fa-shake fa-2x" style="color: #527bdd;"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right fa-shake fa-2x" style="color: #527bdd;"></i></div>
             <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
@@ -333,7 +374,7 @@
               <div class="col-lg-1"></div>
               <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
                   <div class="thumbnail" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                      <img src="./assets/images/Group_56.png" alt="creative_about">
+                      <img src="./assets/images/about-user-xp-img.png" alt="creative_about">
                   </div>
               </div>
           </div>
@@ -453,9 +494,15 @@
         <h3 class="title text-center mb-4">+PORTFOLIO</h3>
         <div class="swiper-container slider2">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><h1>Slide 1</h1></div>
-                <div class="swiper-slide"><h1>Slide 2</h1></div>
-                <div class="swiper-slide"><h1>Slide 3</h1></div>
+                <div class="swiper-slide portfolio-img-1">
+                  <!-- <img src="./assets/images/portfolio-card-img-1.png" class="portfolio-img" alt=""> -->
+                </div>
+                <div class="swiper-slide portfolio-img-2">
+                  <!-- <img src="./assets/images/portfolio-card-img-2.png" class="portfolio-img" alt=""> -->
+                </div>
+                <div class="swiper-slide portfolio-img-3">
+                  <!-- <img src="./assets/images/portfolio-card-img-3.png" class="portfolio-img" alt=""> -->
+                </div>
             </div>
            <div class="swiper-pagination"></div>
            <!--  <div class="swiper-button-prev"></div>
@@ -475,9 +522,9 @@
     <section id="contact" class="pt-5 px-0 container-fluid position-relative">
       <div class="contact-top-section"></div>
       <div class="contact-bottom-section"></div>
-      <div class="position-absolute contact-form-div">
-        <div class="d-lg-flex w-100">
-          <div class="w-lg-55 h-100 p-2" style="background-color: #FFFFFF;">  
+      <div class="contact-form-div">
+        <div class="row">
+          <div class="col-md-7 p-2" style="background-color: #FFFFFF;">  
             <h3 class="title text-uppercase mb-4">get in touch</h3>
             <form action="" class="px-1 mb-0 col-lg-8 contact-form">
               <div class="row">
@@ -495,7 +542,7 @@
               </div>
             </form>
           </div>
-          <div class="w-lg-45 h-100 p-2" style="background-color:   var(--custom-primary);">
+          <div class="col-md-5 p-2" style="background-color: var(--custom-primary);">
               <h3 class="title-inverse text-uppercase">
                 our location
               </h3>
@@ -512,6 +559,20 @@
       </div>
     </section>
 
+    <footer id="footer">
+      <div class="d-flex justify-content-center align-items-center flex-column py-4">
+         <div class="mb-2">
+              <a href="" class="mx-2">
+                  <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+              </a>
+              <a href="" class="mx-2">
+                  <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+              </a>
+          </div>
+         <span class="text-white copy-text"><span id="spanYear"></span> OpTech Development</span>
+      </div>
+      
+    </footer>
   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
