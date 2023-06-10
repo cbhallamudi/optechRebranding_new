@@ -4,7 +4,7 @@
 		padding-left: 0;
 	}
 
-	img[class*="ellipse_"]{
+	.about-us-abs-img, img[class*="ellipse_"]{
 		z-index: -1;
 		display: none !important;
 	}
