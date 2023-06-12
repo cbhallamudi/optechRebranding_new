@@ -7,11 +7,35 @@
 body, html {
     height: 100%;
     font-family: 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
 /*    background-color: #f88;*/
 }
-
+.inverse-class {
+  -webkit-filter: invert(100%) !important;
+  -moz-filter: invert(100%) !important;
+  -o-filter: invert(100%) !important;
+  -ms-filter: invert(100%) !important; 
+}
 body{
 /*    background-color: #8f8;*/
+}
+
+#inverseColors {
+  top: 30%;
+  right: 0%;
+  z-index: +2;
+  text-decoration: none;
+  border-radius: 100%;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+#inverseColors i{
+  font-size: 18px;
 }
 
 /*animations*/
@@ -565,7 +589,7 @@ body{
   }
 
   .contact-form{
-    background-color: #F8F8F8;
+/*    background-color: #F8F8F8;*/
     width: 100%;
   }
 

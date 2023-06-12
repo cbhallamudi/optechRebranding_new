@@ -1,6 +1,30 @@
 $(document).ready(function(){
 	AOS.init();	
-    $('#spanYear').html(new Date().getFullYear());
+  $('#spanYear').html(new Date().getFullYear());
+  $(".nav-link").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    }); 
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))   
 });
 var slider1 = new Swiper ('.slider1', {
     effect: 'slide',
@@ -78,85 +102,6 @@ $(window).scroll(function() {
     }
 });
 
-// var container = document.getElementById('services_container')
-// var slider = document.getElementById('slider');
-// var slides = document.getElementsByClassName('slide').length;
-// var buttons = document.getElementsByClassName('btn');
-
-
-// var currentPosition = 0;
-// var currentMargin = 0;
-// var slidesPerPage = 0;
-// var slidesCount = slides - slidesPerPage;
-// var containerWidth = container.offsetWidth;
-// var prevKeyActive = false;
-// var nextKeyActive = true;
-
-// window.addEventListener("resize", checkWidth);
-
-// function checkWidth() {
-//     containerWidth = container.offsetWidth;
-//     setParams(containerWidth);
-// }
-
-// function setParams(w) {
-//     if (w < 551) {
-//         slidesPerPage = 1;
-//     } else {
-//         if (w < 901) {
-//             slidesPerPage = 1;
-//         } else {
-//             if (w < 1101) {
-//                 slidesPerPage = 3;
-//             } else {
-//                 slidesPerPage = 3;
-//             }
-//         }
-//     }
-//     slidesCount = slides - slidesPerPage;
-//     if (currentPosition > slidesCount) {
-//         currentPosition -= slidesPerPage;
-//     };
-//     currentMargin = - currentPosition * (100 / slidesPerPage);
-//     slider.style.marginLeft = currentMargin + '%';
-//     if (currentPosition > 0) {
-//         buttons[0].classList.remove('inactive');
-//     }
-//     if (currentPosition < slidesCount) {
-//         buttons[1].classList.remove('inactive');
-//     }
-//     if (currentPosition >= slidesCount) {
-//         buttons[1].classList.add('inactive');
-//     }
-// }
-
-// setParams();
-
-// function slideRight() {
-//     if (currentPosition != 0) {
-//         slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-//         currentMargin += (100 / slidesPerPage);
-//         currentPosition--;
-//     };
-//     if (currentPosition === 0) {
-//         buttons[0].classList.add('inactive');
-//     }
-//     if (currentPosition < slidesCount) {
-//         buttons[1].classList.remove('inactive');
-//     }
-// };
-
-// function slideLeft() {
-//     if (currentPosition != slidesCount) {
-//         slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-//         currentMargin -= (100 / slidesPerPage);
-//         currentPosition++;
-//     };
-//     if (currentPosition == slidesCount) {
-//         buttons[1].classList.add('inactive');
-//     }
-//     if (currentPosition > 0) {
-//         buttons[0].classList.remove('inactive');
-//     }
-// };
-
+$("#inverseColors").click(function(){
+  $("html").toggleClass("inverse-class");
+})

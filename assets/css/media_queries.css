@@ -1,5 +1,11 @@
 
 @media screen and (width < 992px){
+	
+
+	nav{
+		background: #fff !important;
+	}
+
 	.pl-50px{
 		padding-left: 0;
 	}
