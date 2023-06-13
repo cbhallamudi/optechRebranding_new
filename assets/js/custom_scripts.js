@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	AOS.init();	
   $('#spanYear').html(new Date().getFullYear());
-  $(".nav-link").on('click', function(event) {
+  $("a.nav-link").on('click', function(event) {
 
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -22,6 +22,16 @@ $(document).ready(function(){
         });
       } // End if
     }); 
+
+  $("button.nav-link").click(function(){
+
+    var buttonId = $(this).attr("id"); 
+
+    $(".dropdown-tab-pane").removeClass("fa-square-caret-down");
+    $(".dropdown-tab-pane").addClass("fa-square-caret-right");
+    $("#"+buttonId+"_fa").removeClass("fa-square-caret-right fa-square-caret-down");
+    $("#"+buttonId+"_fa").addClass("fa-square-caret-right fa-square-caret-down");
+  });
 
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))   
@@ -58,6 +68,7 @@ var slider1 = new Swiper ('.slider1', {
     // },
 });
 
+
 var slider2 = new Swiper ('.slider2', {
     loop: true,
     center: true,
@@ -84,11 +95,24 @@ var slider2 = new Swiper ('.slider2', {
         slidesPerView: 3
       }
     },
+    on: {
+        realIndexChange: function () {
+          let index = this.realIndex + 1; /* slide 1 => slides[1] */
+          let current_title = this.slides[index].dataset.title;
+          let current_desc = this.slides[index].dataset.desc;
+          $("#swiper_dynamic_title").text(current_title);
+          $("#swiper_dynamic_content").text(current_desc);
+        },
+      }
 
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
 });
+
+// slider2.on('transitionEnd', function() {
+//   console.log('*** slider2.realIndex', slider2.realIndex);
+// });
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

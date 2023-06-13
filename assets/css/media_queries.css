@@ -1,6 +1,21 @@
 
 @media screen and (width < 992px){
-	
+	#about.py-100t-50b, #service.py-100t-50b {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+
+	#service{
+		min-height: 10vh;
+	}
+/*
+	#home.py-100t-50b {
+		padding-bottom: 0;
+	}
+*/
+	.hero-image {
+		min-height: 10vh;
+	}
 
 	nav{
 		background: #fff !important;

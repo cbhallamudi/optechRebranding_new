@@ -254,10 +254,10 @@ body{
     text-align: center;
   }
 
-  .slider2 .swiper-wrapper .swiper-slide{
+/*  .slider2 .swiper-wrapper .swiper-slide{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 24px; 
-  }
+  }*/
  
   .slider1 .swiper-wrapper .swiper-slide h1 {
     position: absolute;
@@ -277,8 +277,8 @@ body{
     min-height: 340px;
     max-height: fit-content;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 24px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 24px; 
     margin-top: 10%;
     margin-bottom: 10%;
     transition: transform 0.5s;
@@ -504,7 +504,7 @@ body{
 /*Portfolio*/
     
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 29%;
+  bottom: 24%;
   left: 0;
   width: 100%;
 }
@@ -542,6 +542,127 @@ body{
 }
 
 /*Portfolio Ends*/
+
+/*Communication Services*/
+  
+  .bg_service-h4 {
+    background: #FFFFFF;
+    color: #222326;
+    position: relative;
+    z-index: 1;
+  }
+  .bg_service-h4 .separator {
+    position: absolute;
+    height: 1px;
+    background: #222326;
+    width: 100%;
+    display: block;
+    z-index: -1;
+  }
+
+  .service-tab-h4 {
+    padding-right: 100px;
+  }
+  @media only screen and (max-width: 767px) {
+    .service-tab-h4 {
+      padding-right: 0;
+    }
+  }
+  .service-tab-h4 .nav {
+    border: none;
+    padding-top: 40px;
+  }
+  @media only screen and (max-width: 575px) {
+    .service-tab-h4 .nav {
+      padding-top: 0;
+    }
+  }
+  .service-tab-h4 .nav button {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000313;
+    font-size: 16px;
+    text-align: left;
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+  }
+  @media only screen and (max-width: 575px) {
+    .service-tab-h4 .nav button {
+      margin-bottom: 15px;
+    }
+  }
+
+  .btn-span{
+    display: block !important;
+    width: 100%;
+  }
+
+  .service-tab-h4 .nav button span:not(.btn-span) {
+    display: none;
+    transition: 0.3s;
+    text-transform: capitalize;
+    margin-top: 15px;
+    visibility: hidden;
+    margin-left: -17px;
+  }
+
+  .service-tab-h4 .nav button[aria-selected=true] {
+    position: relative;
+    margin-left: 15px;
+    transition: 0.3s;
+    color: #000313;
+  }
+  .service-tab-h4 .nav button[aria-selected=true] span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(0, 3, 19, 0.5);
+    visibility: visible;
+    margin-left: -17px;
+  }
+  .service-tab-h4 .nav button[aria-selected=true] span.btn-span {
+    color: rgba(0,3,19,1);
+  }
+  /*
+  .service-tab-h4 .nav button[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    right: 76%;
+    top: 17px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: var(--custom-primary);
+  }*/
+
+  .service-tab-h4 .nav button:last-child {
+    margin-bottom: 0;
+  }
+  .service-tab-h4 .nav button:hover {
+    border: none;
+  }
+  .service-tab-h4 .nav button:focus {
+    border: none;
+  }
+  .service-tab-h4 .nav button.active {
+    background-color: transparent !important;
+    border: none;
+  }
+
+  .service-tab-h4-right .thumbnail {
+    padding-top: 45px;
+    transition: 0.3s;
+  }
+  .service-tab-h4-right .thumbnail:hover {
+    transform: scale(0.95);
+  }
+
+/*Communication Services Ends*/
 
 /* Contact Section */
 
