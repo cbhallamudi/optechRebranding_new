@@ -53,7 +53,7 @@ var slider1 = new Swiper ('.slider1', {
 
     breakpoints: {
       350: {
-        slidesPerView: 1
+        slidesPerView: 1,
       },
       767: {
         slidesPerView: 3
@@ -74,7 +74,7 @@ var slider2 = new Swiper ('.slider2', {
     center: true,
     centeredSlides: true,
     slidesPerView: 'auto',
-    spaceBetween: 15,
+    spaceBetween: 25,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -86,10 +86,11 @@ var slider2 = new Swiper ('.slider2', {
     // },
     breakpoints: {
       600: {
-        slidesPerView: 1
+        slidesPerView: 1,
+        spaceBetween: 25
       },
       767: {
-        slidesPerView: 3
+        slidesPerView: 2,
       },
       1270: {
         slidesPerView: 3

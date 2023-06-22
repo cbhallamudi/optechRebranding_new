@@ -38,6 +38,10 @@ body{
   font-size: 18px;
 }
 
+.container-fluid{
+  max-width: 1600px;
+}
+
 /*animations*/
 
   @keyframes ellipse_1{
@@ -344,9 +348,9 @@ body{
     min-height: 100%;
     height: auto;
   }
-  #about-in-house, #about-custom-build, #about-user-experience{
-/*    background: linear-gradient(to top right, #F8F8F8, #E8EBFA99);*/
-    background-image: url("../images/custom-build-solutions_bg_1.png");
+  #about-in-house, #about-custom-build, #about-user-experience {
+    background: linear-gradient(to right, #F8F8F8 62%, var(--custom-primary) 63%);
+    /* background-image: url("../images/custom-build-solutions_bg_1.png"); */
     min-height: 100%;
     height: auto;
   }
@@ -511,7 +515,16 @@ body{
 
 .slider2 .swiper-slide-active{
 /*  margin: auto 10px;*/
-  transform: translateY(-10%);
+  transform: translateY(-15%) scale(1.1);
+  box-shadow: 0px 0px 10px 1px;
+  position: relative;
+  z-index: +1;
+}
+
+.slider2 .swiper-slide:not(.swiper-slide-active){
+  z-index: -1;
+  position: relative;
+  transform: scale(0.9);
 }
 
 .portfolio-img{
@@ -660,6 +673,10 @@ body{
   }
   .service-tab-h4-right .thumbnail:hover {
     transform: scale(0.95);
+  }
+
+  .communications-services-img{
+    width: 100%;
   }
 
 /*Communication Services Ends*/
