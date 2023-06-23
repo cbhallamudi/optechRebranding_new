@@ -1,5 +1,6 @@
 
 @media screen and (width < 992px){
+
 	#about.py-100t-50b, #service.py-100t-50b {
 		padding-top: 0;
 		padding-bottom: 10px;
@@ -17,7 +18,7 @@
 		min-height: 10vh;
 	}
 
-	nav{
+	.navbar, nav{
 		background: #fff !important;
 	}
 
@@ -46,13 +47,46 @@
 	.container{
 		max-width: 90%;
 	}
+
+	#about-in-house, #about-custom-build, #about-user-experience {
+	  background: linear-gradient(to right, #F8F8F8 62%, #FDFDFD 63%);
+	}
+
+	.swiper-pagination-bullets {
+	    display: none;
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+	  display: none;
+	}
 }
 
 
 @media screen and (width < 768px){
+
+	body > *{
+		width: 100%;
+	}
+
+	.banner-btns-group {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100px;
+		justify-content: space-between;
+	}
+
+	h3.title,h3.title-inverse{
+	  font-weight: 600; 	
+	  font-size: 28px;
+	  line-height: 38px;
+	}
+
 	div{
 		width: 100%;
 		text-align: center;
+	  	font-weight: 600; 	
 	}
 
 	.banner-heading, .banner-para{
@@ -94,6 +128,11 @@
 	.contact-bottom-section{
 		display: none;
 	}
+
+	.title-area + span{
+	  font-size: 20px;
+	  line-height: 24px;
+	}
 }
 
 @media screen and (width < 576px){
@@ -109,6 +148,11 @@
 		bottom: 39%;
 		left: 0;
 		width: 100%;
+	}
+}
+@media screen and (width < 375px){
+	.navbar > .container{
+		justify-content: center;
 	}
 }
 
