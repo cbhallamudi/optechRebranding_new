@@ -1,6 +1,11 @@
 
 @media screen and (width < 992px){
 
+	body > *{
+		width: 100%;
+		text-align: center;
+	}
+
 	#about.py-100t-50b, #service.py-100t-50b {
 		padding-top: 0;
 		padding-bottom: 10px;
@@ -64,9 +69,6 @@
 
 @media screen and (width < 768px){
 
-	body > *{
-		width: 100%;
-	}
 
 	.banner-btns-group {
 		width: 100%;
@@ -132,6 +134,15 @@
 	.title-area + span{
 	  font-size: 20px;
 	  line-height: 24px;
+	}
+
+	.service-tab-h4 .nav button {
+		text-align: center;
+	}
+
+	.py-100t-50b:not(header.py-100t-50b) {
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 }
 
