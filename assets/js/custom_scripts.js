@@ -70,7 +70,7 @@ var slider1 = new Swiper ('.slider1', {
 
 
 var slider2 = new Swiper ('.slider2', {
-    loop: true,
+    loop: false,
     center: true,
     centeredSlides: true,
     slidesPerView: 'auto',

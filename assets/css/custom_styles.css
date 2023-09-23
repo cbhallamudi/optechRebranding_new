@@ -244,7 +244,8 @@ body{
   .slider2 {
 /*    width: 600px;*/
     height: 415px;
-    margin: 90px auto 20px;
+/*    margin: 90px auto 20px;*/
+    margin: 120px auto 20px;
   }
 
   .slider1{
